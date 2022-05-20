@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid v.$negro;
+    margin: 5rem 0;
+    &__titulo{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.4rem;
+        color: brown;
+    }
+}
+
+td, th{
+    text-align: center;
+    width: 7rem;
+    margin: 0rem 2rem;
+    padding: 1rem;
+    overflow: visible;
+}
+
+th{
+    background-color: v.$primario;
+}
+
+td{
+    background-color: v.$grisClaro;
+}
+
+tr{
+    margin: 3rem 0;
+}
+
+.table-balanceado{
+    &__titulo{
+        font-size: 2rem;
+        margin: 3rem 0;
+        font-weight: 700;
+    }
+}
+
+.balanceado{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}

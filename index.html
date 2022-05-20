@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <div class="header__contenedor">
+        <header class="header contenedor">
+            <h1 class="header__titulo">Método Transporte</h1>
+    
+            <nav class="navegacion">
+                <div class="navegacion__contenedor">
+                    
+                    <div class="navegacion__contenedor-enlace">
+                        <a href="" class="navegacion__enlace">Informacion</a>
+                    </div>
+    
+                    <div class="navegacion__contenedor-enlace">
+                        <a href="" class="navegacion__enlace">Transporte</a>
+                    </div>
+    
+                    <div class="navegacion__contenedor-enlace">
+                        <a href="" class="navegacion__enlace">Transborde</a>
+                    </div>
+    
+                </div>
+            </nav>
+        </header>
+    </div>
+    
+
+    <div class="datos contenedor">
+        <div class="datos__contenedor">
+            <form action="" id="datos_iniciales" class="datos__form">
+                <input type="text" name="origenes" id="origenes" placeholder="Origenes">
+                <input type="text" name="destinos" id="destinos" placeholder="Destinos">
+                <button type="button" onclick="generarModelo()">Generar Modelo</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tabla contenedor">
+        <div class="tabla__contenedor">
+            <form action="" id="tabla__datos">
+                <div class="grid" id="grid__tabla">
+
+                </div>
+
+                <div class="grid__button-contenedor" id="grid__button">
+                    <button class="grid__button" onclick="solver()">Resolver</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="JS/simplex.js"></script>
+
+</body>
+</html>

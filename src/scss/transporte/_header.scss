@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__titulo{
+        margin: 0;
+    }
+}
+
+.header__contenedor{
+    width: 100%;
+    background-color: v.$primario;
+    border-bottom: 4px solid v.$negro;
+    margin-bottom: 5rem;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__contenedor{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__contenedor-enlace{
+        margin: 0 2rem;
+    }
+
+    &__enlace{
+        color: v.$negro;
+        font-size: 2.2rem;
+    }
+
+}
