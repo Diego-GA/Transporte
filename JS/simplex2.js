@@ -369,6 +369,7 @@ const leerDatos = ( origenes, destinos, matrizPrincipal ) => {
         for(let j = 0; j< destinos; j++){
             let dato = document.getElementById(`tabla${i}${j}`).value;
             // console.log(dato);
+            dato == 'M' ? dato = 999 : dato = dato;
             fila.push(parseInt( dato ));
         }
         matrizPrincipal.push(fila);
